@@ -9,7 +9,7 @@ namespace LogHelper
             DEBUG_Print("Hello, World!");
         }
 
-        private static string _sourceName = ".Net Runtime";
+        private static readonly string _sourceName = ".Net Runtime";
 
         public static void DEBUG_Print(
             string message,

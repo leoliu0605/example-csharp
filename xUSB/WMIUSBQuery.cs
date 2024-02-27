@@ -1,5 +1,9 @@
-using System;
-using System.Collections.Generic;
+#pragma warning disable CS8600
+#pragma warning disable CS8601
+#pragma warning disable CS8602
+#pragma warning disable CS8603
+#pragma warning disable CS8604
+
 using System.Management;
 using System.Text.RegularExpressions;
 
@@ -26,7 +30,7 @@ namespace UsbDeviceDescript
     public partial class USBList
     {
         #region UsbDevice
-        private static string RegexPattern { set; get; }
+        private static string RegexPattern { set; get; } = string.Empty;
 
         /// <summary>
         /// 設定Regex.Match 的 Pattern
@@ -547,3 +551,8 @@ namespace UsbDeviceDescript
         #endregion
     }
 }
+#pragma warning restore CS8600
+#pragma warning restore CS8601
+#pragma warning restore CS8602
+#pragma warning restore CS8603
+#pragma warning restore CS8604

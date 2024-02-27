@@ -61,7 +61,7 @@ public static class EnumExtension
 
 public class EnumAttribute : Attribute
 {
-    private string _text = string.Empty;
+    private readonly string _text = string.Empty;
 
     public EnumAttribute(string text)
     {

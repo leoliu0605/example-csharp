@@ -1,0 +1,19 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "asmb",
+        "CIMV",
+        "Descript",
+        "hwnd",
+        "pfde",
+        "PICKFOLDERS",
+        "Unadvise",
+        "usbs",
+        "VIDPID"
+    ],
+    "ignoreWords": [],
+    "import": []
+}

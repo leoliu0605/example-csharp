@@ -1,4 +1,7 @@
-using System;
+#pragma warning disable CS8600
+#pragma warning disable CS8602
+#pragma warning disable CS8603
+
 using System.Management;
 
 namespace Splash.IO.PORTS
@@ -27,12 +30,12 @@ namespace Splash.IO.PORTS
         /// <summary>
         /// USB插入事件监视
         /// </summary>
-        private ManagementEventWatcher insertWatcher = null;
+        private ManagementEventWatcher? insertWatcher = null;
 
         /// <summary>
         /// USB拔出事件监视
         /// </summary>
-        private ManagementEventWatcher removeWatcher = null;
+        private ManagementEventWatcher? removeWatcher = null;
 
         /// <summary>
         /// 添加USB事件监视器
@@ -132,3 +135,6 @@ namespace Splash.IO.PORTS
         }
     }
 }
+#pragma warning restore CS8600
+#pragma warning restore CS8602
+#pragma warning restore CS8603

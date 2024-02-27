@@ -1,19 +1,25 @@
+#pragma warning disable CS8600
+#pragma warning disable CS8602
+#pragma warning disable CS8603
+
 using System.Reflection;
 
 namespace System
 {
     public class xFolderBrowserDialog
     {
-        OpenFileDialog openFileDialog = null;
+        readonly OpenFileDialog openFileDialog;
 
         public xFolderBrowserDialog()
         {
-            openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Folders|\n";
-            openFileDialog.AddExtension = false;
-            openFileDialog.CheckFileExists = false;
-            openFileDialog.DereferenceLinks = true;
-            openFileDialog.Multiselect = Multiselect;
+            openFileDialog = new OpenFileDialog
+            {
+                Filter = "Folders|\n",
+                AddExtension = false,
+                CheckFileExists = false,
+                DereferenceLinks = true,
+                Multiselect = Multiselect
+            };
         }
 
         public string InitialDirectory
@@ -29,13 +35,13 @@ namespace System
         public string Title
         {
             get { return openFileDialog.Title; }
-            set { openFileDialog.Title = value == null ? "Select a folder" : value; }
+            set { openFileDialog.Title = value ?? "Select a folder"; }
         }
 
         public bool Multiselect
         {
             get { return openFileDialog.Multiselect; }
-            set { openFileDialog.Multiselect = value == false ? false : value; }
+            set { openFileDialog.Multiselect = value != false && value; }
         }
 
         public string FolderName
@@ -84,10 +90,12 @@ namespace System
             }
             else
             {
-                var fbd = new FolderBrowserDialog();
-                fbd.Description = this.Title;
-                fbd.SelectedPath = this.InitialDirectory;
-                fbd.ShowNewFolderButton = false;
+                var fbd = new FolderBrowserDialog
+                {
+                    Description = this.Title,
+                    SelectedPath = this.InitialDirectory,
+                    ShowNewFolderButton = false
+                };
                 if (fbd.ShowDialog(new WindowWrapper(hWndOwner)) != DialogResult.OK)
                     return false;
                 openFileDialog.FileName = fbd.SelectedPath;
@@ -108,13 +116,13 @@ namespace System
                 get { return _hwnd; }
             }
 
-            private IntPtr _hwnd;
+            private readonly IntPtr _hwnd;
         }
 
         public class Reflector
         {
-            string m_ns;
-            Assembly m_asmb;
+            readonly string m_ns;
+            readonly Assembly? m_asmb;
 
             public Reflector(string ns)
                 : this(ns, ns) { }
@@ -213,3 +221,6 @@ namespace System
         }
     }
 }
+#pragma warning restore CS8600
+#pragma warning restore CS8602
+#pragma warning restore CS8603

@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Management;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Management;
 using UsbDeviceDescript;
 
 namespace xUSB;
 
 class Program
 {
-    private static Splash.IO.PORTS.USB _watcher = null;
-    public static event EventHandler<UsbEventArgs> UsbInsertEvent = null;
-    public static event EventHandler<UsbEventArgs> UsbRemoveEvent = null;
+    private static Splash.IO.PORTS.USB? _watcher = null;
+    public static event EventHandler<UsbEventArgs>? UsbInsertEvent = null;
+    public static event EventHandler<UsbEventArgs>? UsbRemoveEvent = null;
 
     static void Main(string[] args)
     {
@@ -33,28 +28,28 @@ class Program
 
     private static UsbAttribute[] GetUsbs()
     {
-        var usb = new List<UsbAttribute>();
+        var list = new List<UsbAttribute>();
         if (USBList.AllUsbDevices != null)
         {
-            foreach (PnPEntityInfo List in USBList.AllUsbDevices)
+            foreach (PnPEntityInfo item in USBList.AllUsbDevices)
             {
-                string name = List.Name;
-                ushort vid = List.VendorID;
-                ushort pid = List.ProductID;
-                usb.Add(new UsbAttribute(name, vid, pid));
+                ushort vid = item.VendorID;
+                ushort pid = item.ProductID;
+                string name = item.Name;
+                list.Add(new UsbAttribute(vid, pid, name));
             }
         }
-        return usb.ToArray();
+        return list.ToArray();
     }
 
     private static void USBEventHandler(Object sender, EventArrivedEventArgs e)
     {
-        var usbs = GetUsbs();
+        var list = GetUsbs();
         if (e.NewEvent.ClassPath.ClassName == "__InstanceCreationEvent")
         {
             if (UsbInsertEvent != null)
             {
-                var args = new UsbEventArgs(string.Empty, usbs);
+                var args = new UsbEventArgs(string.Empty, list);
                 UsbInsertEvent(null, args);
             }
         }
@@ -62,7 +57,7 @@ class Program
         {
             if (UsbRemoveEvent != null)
             {
-                var args = new UsbEventArgs(string.Empty, usbs);
+                var args = new UsbEventArgs(string.Empty, list);
                 UsbRemoveEvent(null, args);
             }
         }
@@ -82,20 +77,21 @@ class Program
 
     public class UsbAttribute : Attribute
     {
-        private ushort ProductID;
-        private ushort VendorID;
+        private readonly ushort ProductID;
+        private readonly ushort VendorID;
 
         public UsbAttribute(ushort vid, ushort pid)
         {
             this.VendorID = vid;
             this.ProductID = pid;
+            this.Name = string.Empty;
         }
 
-        public UsbAttribute(string name, ushort vid, ushort pid)
+        public UsbAttribute(ushort vid, ushort pid, string name)
         {
-            this.Name = name;
             this.VendorID = vid;
             this.ProductID = pid;
+            this.Name = name;
         }
 
         public (ushort VID, ushort PID) ID => (this.VendorID, this.ProductID);
@@ -104,7 +100,7 @@ class Program
 
         public override string ToString()
         {
-            return $"\"{Name}->VendorID=0x{ID.VID:X4}; ProductID=0x{ID.PID:X4}\"";
+            return $"\"{Name,-35} -> VendorID=0x{ID.VID:X4} / ProductID=0x{ID.PID:X4}\"";
         }
     }
 }
