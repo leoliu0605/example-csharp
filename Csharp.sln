@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogHelper", "LogHelper\LogH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xThread", "xThread\xThread.csproj", "{CA8A8759-A44A-4404-A92B-07C22F3D75FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xBitmap", "xBitmap\xBitmap.csproj", "{00591508-7B0F-4999-8C29-6DBEDDA28551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CA8A8759-A44A-4404-A92B-07C22F3D75FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA8A8759-A44A-4404-A92B-07C22F3D75FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA8A8759-A44A-4404-A92B-07C22F3D75FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00591508-7B0F-4999-8C29-6DBEDDA28551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00591508-7B0F-4999-8C29-6DBEDDA28551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00591508-7B0F-4999-8C29-6DBEDDA28551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00591508-7B0F-4999-8C29-6DBEDDA28551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
