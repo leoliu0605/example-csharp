@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Formats.Jpeg;
 
 namespace ImageToBase64;
 
@@ -14,22 +13,11 @@ class Program
         );
 
         var image = Image.Load(stream);
-        var base64String = ImageToBase64String(image);
+        var base64String = image.ToBase64String();
         var htmlContent = $"<img src=\"data:image/jpeg;base64,{base64String}\" alt=\"Cat Image\">";
         var filePath = Path.Combine(AppContext.BaseDirectory, "index.html");
         File.WriteAllText(filePath, htmlContent);
         Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
         Console.WriteLine("Image converted to base64 and saved to index.html");
-    }
-
-    public static string ImageToBase64String(Image image)
-    {
-        using (var ms = new MemoryStream())
-        {
-            image.Save(ms, new JpegEncoder { Quality = 100 });
-            var array = ms.ToArray();
-            var base64String = Convert.ToBase64String(array);
-            return base64String;
-        }
     }
 }
