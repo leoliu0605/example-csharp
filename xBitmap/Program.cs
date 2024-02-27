@@ -3,13 +3,16 @@ using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 namespace xBitmap;
+
 class Program
 {
     [STAThread] // Required for Windows Forms
     static async Task Main(string[] args)
     {
         HttpClient httpClient = new HttpClient();
-        Stream stream = await httpClient.GetStreamAsync("https://images.pexels.com/photos/1386422/pexels-photo-1386422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        Stream stream = await httpClient.GetStreamAsync(
+            "https://images.pexels.com/photos/1386422/pexels-photo-1386422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        );
 
         var image = Image.FromStream(stream);
         var bitmap = ImageToGrayBitmap(image);
@@ -71,8 +74,16 @@ class Program
             }
         }
 
-        var bitmap = new Bitmap(width, height, System.Drawing.Imaging.PixelFormat.Format8bppIndexed);
-        BitmapData bmpData = bitmap.LockBits(new Rectangle(0, 0, width, height), ImageLockMode.WriteOnly, bitmap.PixelFormat);
+        var bitmap = new Bitmap(
+            width,
+            height,
+            System.Drawing.Imaging.PixelFormat.Format8bppIndexed
+        );
+        BitmapData bmpData = bitmap.LockBits(
+            new Rectangle(0, 0, width, height),
+            ImageLockMode.WriteOnly,
+            bitmap.PixelFormat
+        );
 
         var stride = bmpData.Stride;
         var offset = stride - width;

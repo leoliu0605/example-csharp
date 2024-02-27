@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 
 namespace xThread;
+
 class Program
 {
     static void Main(string[] args)
@@ -12,9 +13,9 @@ class Program
 
 partial class xThread
 {
-    ConcurrentQueue<byte[]> fifo = null;
-    ManualResetEvent pauseEvent = null;
-    Thread thread = null;
+    readonly ConcurrentQueue<byte[]>? fifo = null;
+    readonly ManualResetEvent? pauseEvent = null;
+    readonly Thread? thread = null;
 
     internal xThread()
     {
