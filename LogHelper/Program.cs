@@ -1,4 +1,6 @@
-﻿namespace LogHelper
+﻿using System.Runtime.CompilerServices;
+
+namespace LogHelper
 {
     internal class Program
     {
@@ -9,9 +11,20 @@
 
         private static string _sourceName = ".Net Runtime";
 
-        public static void DEBUG_Print(string message, System.Diagnostics.EventLogEntryType type = System.Diagnostics.EventLogEntryType.Information)
+        public static void DEBUG_Print(
+            string message,
+            System.Diagnostics.EventLogEntryType type =
+                System.Diagnostics.EventLogEntryType.Information,
+            [CallerMemberName] string call = null,
+            [CallerLineNumber] int line = 0
+        )
         {
-            if (System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows))
+            Console.WriteLine($"{call}({line}): {message}");
+            if (
+                System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(
+                    System.Runtime.InteropServices.OSPlatform.Windows
+                )
+            )
             {
                 System.Diagnostics.EventLog.WriteEntry(_sourceName, message, type);
             }
