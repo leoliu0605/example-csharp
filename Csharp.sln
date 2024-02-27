@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xBitmap", "xBitmap\xBitmap.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageToBase64", "ImageToBase64\ImageToBase64.csproj", "{ACCBF60A-9DB5-47A5-88D8-D6A922061D68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xEnum", "xEnum\xEnum.csproj", "{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ACCBF60A-9DB5-47A5-88D8-D6A922061D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACCBF60A-9DB5-47A5-88D8-D6A922061D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACCBF60A-9DB5-47A5-88D8-D6A922061D68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

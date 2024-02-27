@@ -16,8 +16,9 @@ class Program
         var image = Image.Load(stream);
         var base64String = ImageToBase64String(image);
         var htmlContent = $"<img src=\"data:image/jpeg;base64,{base64String}\" alt=\"Cat Image\">";
-        File.WriteAllText("index.html", htmlContent);
-        Process.Start(new ProcessStartInfo("index.html") { UseShellExecute = true });
+        var filePath = Path.Combine(AppContext.BaseDirectory, "index.html");
+        File.WriteAllText(filePath, htmlContent);
+        Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
         Console.WriteLine("Image converted to base64 and saved to index.html");
     }
 
