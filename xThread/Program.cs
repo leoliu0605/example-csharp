@@ -47,6 +47,13 @@ partial class xThread
 
     void Method1()
     {
+        if (fifo == null)
+            throw new ArgumentNullException(nameof(fifo));
+        if (pauseEvent == null)
+            throw new ArgumentNullException(nameof(pauseEvent));
+        if (thread == null)
+            throw new ArgumentNullException(nameof(thread));
+
         var random = new Random();
         do
         {
@@ -66,6 +73,13 @@ partial class xThread
 
     void Method2()
     {
+        if (fifo == null)
+            throw new ArgumentNullException(nameof(fifo));
+        if (pauseEvent == null)
+            throw new ArgumentNullException(nameof(pauseEvent));
+        if (thread == null)
+            throw new ArgumentNullException(nameof(thread));
+
         do
         {
             pauseEvent.WaitOne(System.Threading.Timeout.Infinite);

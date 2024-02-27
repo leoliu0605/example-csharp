@@ -15,7 +15,7 @@ namespace LogHelper
             string message,
             System.Diagnostics.EventLogEntryType type =
                 System.Diagnostics.EventLogEntryType.Information,
-            [CallerMemberName] string call = null,
+            [CallerMemberName] string? call = null,
             [CallerLineNumber] int line = 0
         )
         {
