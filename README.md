@@ -17,6 +17,7 @@ choco install -y dotnet-6.0-sdk dotnet-8.0-sdk
 asdf plugin add dotnet
 asdf install dotnet 6.0.419
 asdf install dotnet 8.0.201
+asdf global dotnet 6.0.419
 asdf local dotnet 6.0.419
 dotnet --version
 ```
