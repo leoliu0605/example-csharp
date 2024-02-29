@@ -13,54 +13,62 @@
 | [xThread](./xThread/)                           | Demonstrate how to use Thread                                 | Windows, macOS, Linux |
 | [xUSB](./xUSB/)                                 | List USB devices via WMI (Windows Management Instrumentation) | Windows               |
 
-### Quick Start
+### 系統需求
+
+- 對於 Windows，需要 [Chocolatey](https://chocolatey.org/install) 包管理器
+- 對於 macOS，需要 [Homebrew](https://brew.sh/)
+- 對於 Linux (Debian/Ubuntu)，需要 apt-get
 
 #### 安裝 . NET SDK
 
-* Windows
+根據您的操作系統，自動安裝 . NET 6.0 SDK：
 
 ```bash
-choco install -y dotnet-6.0-sdk
-dotnet --list-sdks
+make install
 ```
 
-* macOS
+#### 新增專案
+
+新增一個名為 `<project-name>` 的 . NET 控制台專案：
 
 ```bash
-# https://github.com/isen-ng/homebrew-dotnet-sdk-versions
-brew tap isen-ng/dotnet-sdk-versions
-brew install --cask dotnet-sdk6-0-400
-dotnet --list-sdks
+make new NAME=<project-name>
 ```
 
-* Linux
+#### 刪除專案
+
+刪除一個名為 `<project-name>` 的專案，包括它的所有檔案和目錄：
 
 ```bash
-# asdf plugin add dotnet https://github.com/hensou/asdf-dotnet.git
-asdf plugin add dotnet
-asdf install dotnet 6.0.419
-asdf local dotnet 6.0.419
-dotnet --list-sdks
+make remove NAME=<project-name>
 ```
 
-#### 建立專案
+#### 列出 SDK 和專案
+
+列出已安裝的 . NET SDK 版本和解決方案中的專案：
 
 ```bash
-dotnet new console --framework net6.0 --use-program-main --name <project-name>
+make list
 ```
+
+#### 運行專案
+
+運行一個名為 `<project-name>` 的專案：
 
 ```bash
-dotnet sln add <project-name>
+make run NAME=<project-name>
 ```
 
-#### 執行專案
+#### 添加套件
+
+向名為 `<project-name>` 的專案添加名為 `<package-name>` 的套件：
 
 ```bash
-dotnet run --project <project-name>
+make add NAME=<project-name> PACK=<package-name>
 ```
 
-#### 新增套件
+#### 注意
 
-```bash
-dotnet add <project-name> package <package-name>
-```
+- 確保在使用任何命令之前，您已經安裝了所有必要的依賴項。
+- 專案名稱 (`NAME`) 和套件名稱 (`PACK`) 是必須手動指定的參數。
+- 如果未在命令行指定 `NAME`，系統將嘗試從 `.env` 檔案讀取或提示您輸入。
