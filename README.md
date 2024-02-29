@@ -20,19 +20,27 @@
 * Windows
 
 ```bash
-choco install -y dotnet-6.0-sdk dotnet-8.0-sdk
+choco install -y dotnet-6.0-sdk
+dotnet --list-sdks
 ```
 
-* macOS / Linux
+* macOS
+
+```bash
+# https://github.com/isen-ng/homebrew-dotnet-sdk-versions
+brew tap isen-ng/dotnet-sdk-versions
+brew install --cask dotnet-sdk6-0-400
+dotnet --list-sdks
+```
+
+* Linux
 
 ```bash
 # asdf plugin add dotnet https://github.com/hensou/asdf-dotnet.git
 asdf plugin add dotnet
 asdf install dotnet 6.0.419
-asdf install dotnet 8.0.201
-asdf global dotnet 6.0.419
 asdf local dotnet 6.0.419
-dotnet --version
+dotnet --list-sdks
 ```
 
 #### 建立專案
