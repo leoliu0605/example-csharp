@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogHelper", "LogHelper\LogHelper.csproj", "{C9201185-2CEA-4695-9CC3-F302B9634825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogHelper", "LogHelper\LogHelper.csproj", "{C9201185-2CEA-4695-9CC3-F302B9634825}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xThread", "xThread\xThread.csproj", "{CA8A8759-A44A-4404-A92B-07C22F3D75FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xThread", "xThread\xThread.csproj", "{CA8A8759-A44A-4404-A92B-07C22F3D75FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xBitmap", "xBitmap\xBitmap.csproj", "{00591508-7B0F-4999-8C29-6DBEDDA28551}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xBitmap", "xBitmap\xBitmap.csproj", "{00591508-7B0F-4999-8C29-6DBEDDA28551}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageToBase64", "ImageToBase64\ImageToBase64.csproj", "{ACCBF60A-9DB5-47A5-88D8-D6A922061D68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageToBase64", "ImageToBase64\ImageToBase64.csproj", "{ACCBF60A-9DB5-47A5-88D8-D6A922061D68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xEnum", "xEnum\xEnum.csproj", "{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xEnum", "xEnum\xEnum.csproj", "{6028B3C2-4D77-4D5D-8FB8-300FF1D80D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUSB", "xUSB\xUSB.csproj", "{05C9259B-F13C-45CB-8E47-47D759DA3103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUSB", "xUSB\xUSB.csproj", "{05C9259B-F13C-45CB-8E47-47D759DA3103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xFolderBrowserDialog", "xFolderBrowserDialog\xFolderBrowserDialog.csproj", "{7CF788BF-AA4F-4770-970A-FD26D9B6FEDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xProgressBar", "xProgressBar\xProgressBar.csproj", "{3BA85EC4-58D1-42E8-9C99-18CD2D53B66B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xProgressBar", "xProgressBar\xProgressBar.csproj", "{3BA85EC4-58D1-42E8-9C99-18CD2D53B66B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xFolderBrowserDialog", "xFolderBrowserDialog\xFolderBrowserDialog.csproj", "{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +49,14 @@ Global
 		{05C9259B-F13C-45CB-8E47-47D759DA3103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C9259B-F13C-45CB-8E47-47D759DA3103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C9259B-F13C-45CB-8E47-47D759DA3103}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CF788BF-AA4F-4770-970A-FD26D9B6FEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CF788BF-AA4F-4770-970A-FD26D9B6FEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CF788BF-AA4F-4770-970A-FD26D9B6FEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CF788BF-AA4F-4770-970A-FD26D9B6FEDB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3BA85EC4-58D1-42E8-9C99-18CD2D53B66B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3BA85EC4-58D1-42E8-9C99-18CD2D53B66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA85EC4-58D1-42E8-9C99-18CD2D53B66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA85EC4-58D1-42E8-9C99-18CD2D53B66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

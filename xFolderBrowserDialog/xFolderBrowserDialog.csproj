@@ -9,4 +9,8 @@
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FolderBrowserEx" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>

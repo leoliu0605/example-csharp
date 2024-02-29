@@ -4,18 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        var folder = new System.xFolderBrowserDialog()
+        var dialog = new FolderBrowserEx.FolderBrowserDialog
         {
             Title = "Select a folder",
-            Multiselect = true
+            InitialFolder = @"C:\",
+            AllowMultiSelect = true
         };
 
-        if (folder.ShowDialog())
+        if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
         {
-            foreach (var folderName in folder.FolderNames)
+            foreach (var folder in dialog.SelectedFolders)
             {
-                Console.WriteLine(folderName);
+                Console.WriteLine(folder);
             }
+        }
+        else
+        {
+            Console.WriteLine("No folder selected");
         }
     }
 }
