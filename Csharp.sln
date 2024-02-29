@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xProgressBar", "xProgressBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xFolderBrowserDialog", "xFolderBrowserDialog\xFolderBrowserDialog.csproj", "{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawToDng", "RawToDng\RawToDng.csproj", "{ADA96D4D-6EC6-495D-AE42-8E1D974246E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A15ACD21-C0BF-4DE6-AF2D-7AF4A988598D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA96D4D-6EC6-495D-AE42-8E1D974246E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA96D4D-6EC6-495D-AE42-8E1D974246E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA96D4D-6EC6-495D-AE42-8E1D974246E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA96D4D-6EC6-495D-AE42-8E1D974246E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
