@@ -2,7 +2,20 @@
 
 這是一個簡單的 C# 程式碼範例集合。
 
-### 安裝 . NET SDK
+| Example                                         | Description                                                   | Platform              |
+| ----------------------------------------------- | ------------------------------------------------------------- | --------------------- |
+| [ImageToBase64](./ImageToBase64/)               | Convert image to base64 string                                | Windows, macOS, Linux |
+| [LogHelper](./LogHelper/)                       | Print log to Windows Event Viewer                             | Windows               |
+| [xBitmap](./xBitmap/)                           | Convert image to grayscale                                    | Windows               |
+| [xEnum](./xEnum/)                               | Demonstrate how to use an attribute to extend an Enum         | Windows, macOS, Linux |
+| [xFolderBrowserDialog](./xFolderBrowserDialog/) | Open a folder browser dialog with multi-select                | Windows               |
+| [xProgressBar](./xProgressBar/)                 | Progress Bar with Text                                        | Windows               |
+| [xThread](./xThread/)                           | Demonstrate how to use Thread                                 | Windows, macOS, Linux |
+| [xUSB](./xUSB/)                                 | List USB devices via WMI (Windows Management Instrumentation) | Windows               |
+
+### Quick Start
+
+#### 安裝 . NET SDK
 
 * Windows
 
@@ -22,18 +35,24 @@ asdf local dotnet 6.0.419
 dotnet --version
 ```
 
-### 建立專案
+#### 建立專案
 
 ```bash
-dotnet new console --framework net6.0 --use-program-main -n <project-name>
+dotnet new console --framework net6.0 --use-program-main --name <project-name>
 ```
 
 ```bash
-dotnet sln add <project-name>/<project-name>.csproj
+dotnet sln add <project-name>
 ```
 
-### 執行專案
+#### 執行專案
 
 ```bash
-dotnet run --project <project-name>/<project-name>.csproj
+dotnet run --project <project-name>
+```
+
+#### 新增套件
+
+```bash
+dotnet add <project-name> package <package-name>
 ```
