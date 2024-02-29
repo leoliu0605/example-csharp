@@ -5,6 +5,7 @@
     "dictionaries": [],
     "words": [
         "asmb",
+        "choco",
         "CIMV",
         "Descript",
         "hwnd",
@@ -12,7 +13,8 @@
         "PICKFOLDERS",
         "Unadvise",
         "usbs",
-        "VIDPID"
+        "VIDPID",
+        "winforms"
     ],
     "ignoreWords": [],
     "import": []
