@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinProgressBar", "WinProgre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinUSB", "WinUSB\WinUSB.csproj", "{A9F5AD79-B103-41BE-A093-AA46A1BDA82D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWPF", "DemoWPF\DemoWPF.csproj", "{07AA1E28-FC2F-4235-BA7A-3A960155285A}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,5 +161,17 @@ Global
 		{A9F5AD79-B103-41BE-A093-AA46A1BDA82D}.Release|x64.Build.0 = Release|Any CPU
 		{A9F5AD79-B103-41BE-A093-AA46A1BDA82D}.Release|x86.ActiveCfg = Release|Any CPU
 		{A9F5AD79-B103-41BE-A093-AA46A1BDA82D}.Release|x86.Build.0 = Release|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Debug|x64.Build.0 = Debug|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Debug|x86.Build.0 = Debug|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Release|x64.ActiveCfg = Release|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Release|x64.Build.0 = Release|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Release|x86.ActiveCfg = Release|Any CPU
+		{07AA1E28-FC2F-4235-BA7A-3A960155285A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
