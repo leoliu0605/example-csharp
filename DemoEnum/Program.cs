@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace xEnum;
+namespace DemoEnum;
 
 class Program
 {

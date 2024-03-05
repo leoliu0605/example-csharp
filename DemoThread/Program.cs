@@ -1,22 +1,22 @@
 ﻿using System.Collections.Concurrent;
 
-namespace xThread;
+namespace DemoThread;
 
 class Program
 {
     static void Main(string[] args)
     {
-        new xThread();
+        new DemoThread();
     }
 }
 
-partial class xThread
+partial class DemoThread
 {
     readonly ConcurrentQueue<byte[]>? fifo = null;
     readonly ManualResetEvent? pauseEvent = null;
     readonly Thread? thread = null;
 
-    internal xThread()
+    internal DemoThread()
     {
         thread = new Thread(Method1);
         pauseEvent = new ManualResetEvent(false);

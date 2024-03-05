@@ -3,7 +3,7 @@ using SixLabors.ImageSharp.Formats.Jpeg;
 
 namespace System
 {
-    public static class ImageToBase64
+    public static class CrossImageToBase64
     {
         public static string ToBase64String(this Image image)
         {

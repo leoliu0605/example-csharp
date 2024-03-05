@@ -1,4 +1,4 @@
-﻿namespace xFolderBrowserDialog;
+﻿namespace WinFolderBrowserDialog;
 
 class Program
 {

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace LogHelper
+namespace WinLogHelper
 {
     internal class Program
     {

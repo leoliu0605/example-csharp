@@ -1,4 +1,4 @@
-﻿namespace RawToDng;
+﻿namespace CrossRawToDng;
 class Program
 {
     static void Main(string[] args)

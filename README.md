@@ -2,16 +2,17 @@
 
 這是一個簡單的 C# 程式碼範例集合。
 
-| Example                                         | Description                                                   | Platform              |
-| ----------------------------------------------- | ------------------------------------------------------------- | --------------------- |
-| [ImageToBase64](./ImageToBase64/)               | Convert image to base64 string                                | Windows, macOS, Linux |
-| [LogHelper](./LogHelper/)                       | Print log to Windows Event Viewer                             | Windows               |
-| [xBitmap](./xBitmap/)                           | Convert image to grayscale                                    | Windows               |
-| [xEnum](./xEnum/)                               | Demonstrate how to use an attribute to extend an Enum         | Windows, macOS, Linux |
-| [xFolderBrowserDialog](./xFolderBrowserDialog/) | Open a folder browser dialog with multi-select                | Windows               |
-| [xProgressBar](./xProgressBar/)                 | Progress Bar with Text                                        | Windows               |
-| [xThread](./xThread/)                           | Demonstrate how to use Thread                                 | Windows, macOS, Linux |
-| [xUSB](./xUSB/)                                 | List USB devices via WMI (Windows Management Instrumentation) | Windows               |
+| Example                                             | Description                                                   | Platform              |
+| --------------------------------------------------- | ------------------------------------------------------------- | --------------------- |
+| [CrossImageToBase64](./CrossImageToBase64/)         | Convert image to base64 string                                | Windows, macOS, Linux |
+| [CrossRawToDng](./CrossRawToDng/)                   | Convert RAW image to DNG format                               | Windows, macOS, Linux |
+| [DemoEnum](./DemoEnum/)                             | Demonstrate how to use an attribute to extend an Enum         | Windows, macOS, Linux |
+| [DemoThread](./DemoThread/)                         | Demonstrate how to use Thread                                 | Windows, macOS, Linux |
+| [WinBitmap](./WinBitmap/)                           | Convert image to grayscale                                    | Windows               |
+| [WinFolderBrowserDialog](./WinFolderBrowserDialog/) | Open a folder browser dialog with multi-select                | Windows               |
+| [WinLogHelper](./WinLogHelper/)                     | Print log to Windows Event Viewer                             | Windows               |
+| [WinProgressBar](./WinProgressBar/)                 | Progress Bar with Text                                        | Windows               |
+| [WinUSB](./WinUSB/)                                 | List USB devices via WMI (Windows Management Instrumentation) | Windows               |
 
 ### 系統需求
 

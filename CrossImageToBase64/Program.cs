@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using SixLabors.ImageSharp;
 
-namespace ImageToBase64;
+namespace CrossImageToBase64;
 
 class Program
 {

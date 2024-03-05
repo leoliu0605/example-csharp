@@ -1,4 +1,4 @@
-﻿namespace xProgressBar;
+﻿namespace WinProgressBar;
 
 class Program
 {
@@ -26,7 +26,7 @@ class Program
 
         var form = new Form
         {
-            Text = "xProgressBar",
+            Text = "WinProgressBar",
             Size = new Size(300, 100),
             FormBorderStyle = FormBorderStyle.FixedSingle,
             StartPosition = FormStartPosition.CenterScreen,

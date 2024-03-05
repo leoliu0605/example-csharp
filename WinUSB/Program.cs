@@ -1,7 +1,7 @@
 ﻿using System.Management;
 using UsbDeviceDescript;
 
-namespace xUSB;
+namespace WinUSB;
 
 class Program
 {
