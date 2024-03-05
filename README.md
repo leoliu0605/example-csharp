@@ -6,6 +6,7 @@
 | --------------------------------------------------- | ------------------------------------------------------------- | --------------------- |
 | [CrossImageToBase64](./CrossImageToBase64/)         | Convert image to base64 string                                | Windows, macOS, Linux |
 | [CrossRawToDng](./CrossRawToDng/)                   | Convert RAW image to DNG format                               | Windows, macOS, Linux |
+| [CrossUSB](./CrossUSB/)                             | Control USB device across platform                            | Windows, macOS, Linux |
 | [DemoEnum](./DemoEnum/)                             | Demonstrate how to use an attribute to extend an Enum         | Windows, macOS, Linux |
 | [DemoThread](./DemoThread/)                         | Demonstrate how to use Thread                                 | Windows, macOS, Linux |
 | [WinBitmap](./WinBitmap/)                           | Convert image to grayscale                                    | Windows               |
