@@ -27,8 +27,16 @@ ifeq ($(shell uname),Darwin)
 	@brew tap isen-ng/dotnet-sdk-versions
 	@brew install --cask dotnet-sdk6-0-400
 else
+	@sudo apt update
+	@sudo apt install software-properties-common
+	@sudo apt-get update
+	@$(shell source /etc/os-release && \
+		wget https://packages.microsoft.com/config/$ID/$VERSION_ID/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && \
+		sudo dpkg -i packages-microsoft-prod.deb && \
+		rm packages-microsoft-prod.deb)
 	@sudo apt-get update
 	@sudo apt-get install -y dotnet-sdk-6.0
+	@sudo apt-get install -y dotnet-sdk-8.0
 endif
 endif
 
