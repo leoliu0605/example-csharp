@@ -79,4 +79,10 @@ make add NAME=<project-name> PACK=<package-name>
 
 - https://github.com/Tichau/FileConverter
 - https://github.com/mini-software/MiniExcel
-
+- https://github.com/JamesNK/Newtonsoft.Json
+- https://github.com/spectreconsole/spectre.console
+- https://github.com/gui-cs/Terminal.Gui
+- https://github.com/ScottPlot/ScottPlot
+- https://github.com/dorssel/usbipd-win
+- https://github.com/thomhurst/TUnit
+- https://github.com/m4rs-mt/ILGPU
