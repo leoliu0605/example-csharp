@@ -74,3 +74,9 @@ make add NAME=<project-name> PACK=<package-name>
 - 確保在使用任何命令之前，您已經安裝了所有必要的依賴項。
 - 專案名稱 (`NAME`) 和套件名稱 (`PACK`) 是必須手動指定的參數。
 - 如果未在命令行指定 `NAME`，系統將嘗試從 `.env` 檔案讀取或提示您輸入。
+
+## 待新增
+
+- https://github.com/Tichau/FileConverter
+- https://github.com/mini-software/MiniExcel
+
